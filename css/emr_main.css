@@ -1,0 +1,46 @@
+/* 전체 높이를 브라우저 창 높이로 설정 */
+html, body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+/* 각각의 그리드 높이 설정 */
+.menu .Icon {
+    height: 5vh; /* 뷰포트 높이의 10% */
+}
+
+.menu .pt_view {
+    height: 5vh; /* 뷰포트 높이의 20% */
+}
+
+.main_view .pt_info {
+    height: 60vh; /* 뷰포트 높이의 30% */
+}
+
+.main_view .wait_list {
+    height: 60vh; /* 뷰포트 높이의 30% */
+}
+
+.memo .pt_scription {
+    height: 30vh; /* 뷰포트 높이의 15% */
+}
+
+.memo .nurse_memo {
+    height: 30vh; /* 뷰포트 높이의 15% */
+}
+
+.memo .calendar {
+    height: 30vh; /* 뷰포트 높이의 15% */
+}
+.editButton.active-edit {
+    background-color: limegreen !important;
+}
+.wait_list {
+    background-color: #e1f5fe;
+    overflow: auto;
+    max-height: 500px;
+}
+
