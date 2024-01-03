@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외래 EMR</title>
+    <link rel="stylesheet" href="css/emrstyles.css">
+    <script src="js/emrjava.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>외래 EMR 입력</h1>
+
+        <form id="emr-form">
+            <label for="patient-name">환자 이름:</label>
+            <input type="text" id="patient-name" name="patientName" required>
+
+            <label for="patient-age">환자 나이:</label>
+            <input type="number" id="patient-age" name="patientAge" required>
+
+            <label for="diagnosis">진단:</label>
+            <textarea id="diagnosis" name="diagnosis"></textarea>
+
+            <input type="submit" value="제출">
+        </form>
+    </div>
+</body>
+
+</html>
