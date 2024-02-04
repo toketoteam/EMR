@@ -119,9 +119,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="password" id="pwd" name="password">
                 </li>
                 <li>
-                    <input type="checkbox" value="remblog"> 로그인 상태 유지
-                </li>
-                <li>
                     <button class="btn_login" type="submit">로그인</button>
                 </li>
             </ul>
