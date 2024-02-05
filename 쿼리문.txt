@@ -1,0 +1,35 @@
+스키마명: emrs  
+ table명: emr_login, pt_reser, pt_table  
+ 
+
+ CREATE TABLE `emr_login` (
+  `id` varchar(45) NOT NULL,
+  `pw` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci  
+
+
+CREATE TABLE `pt_reser` (
+  `hiddenidx` int(7) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `ptid` int(7) unsigned zerofill NOT NULL,
+  `ptname` varchar(45) DEFAULT NULL,
+  `gender` int NOT NULL,
+  `wanjang` varchar(45) DEFAULT NULL,
+  `reser_time` time DEFAULT NULL,
+  `pt_state` int DEFAULT NULL,
+  `reser_date` date DEFAULT NULL,
+  PRIMARY KEY (`hiddenidx`)
+) ENGINE=InnoDB AUTO_INCREMENT=1234597 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci  
+
+
+CREATE TABLE `pt_table` (
+  `ptid` int(7) unsigned zerofill NOT NULL,
+  `ptname` varchar(45) NOT NULL,
+  `gender` int NOT NULL,
+  `birthdate` int(8) unsigned zerofill NOT NULL,
+  `insurance` int DEFAULT NULL,
+  `contact` varchar(45) DEFAULT NULL,
+  `address` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`ptid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci  
