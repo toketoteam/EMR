@@ -22,7 +22,7 @@ $pt_state = '1';
 $server_time = $_POST['server_time']; // 프론트엔드에서 전송한 서버 시간 값
 $reser_time_input = $_POST['reser_time_input'];
 
-$reser_datetime = new DateTime($reser_time_input);
+$reser_datetime = new DateTime($reser_time_input, new DateTimeZone('Asia/Seoul'));
 $server_datetime = new DateTime($server_time);
 $reser_datetime->setTimezone($server_datetime->getTimezone());
 

@@ -71,7 +71,10 @@ date_default_timezone_set("Asia/Seoul");
     
     document.getElementById('reser_time_input').addEventListener('change', function() {
     const reserTime = new Date(this.value);
-    reserTime.setMinutes(reserTime.getMinutes() + reserTime.getTimezoneOffset());//시간대보정(추가a-1)
+
+    console.log("Client Time: " + reserTime);
+
+    
     const reserDate = reserTime.toISOString().slice(0, 10); // YYYY-MM-DD 형식의 날짜
     const reserHourMin = reserTime.toISOString().slice(11, 16); // HH:MM 형식의 시간
     
@@ -110,7 +113,6 @@ date_default_timezone_set("Asia/Seoul");
         });
                                         }
      
-
     </script>
 </body>
 
